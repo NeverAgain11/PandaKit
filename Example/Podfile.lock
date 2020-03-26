@@ -1,0 +1,31 @@
+PODS:
+  - Kingfisher (4.10.1)
+  - Nimble (7.3.4)
+  - PandaKit (0.1.0)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - Nimble (~> 7.0)
+  - PandaKit (from `../`)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  PandaKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  PandaKit: c97bc4679c2606b71dac8cbd0cd81b3aca15808c
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: a7c6ed74b2008a2b44d5b67eb8389090d15f4af1
+
+COCOAPODS: 1.9.1

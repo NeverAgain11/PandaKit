@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import PandaKit
+import Panda
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

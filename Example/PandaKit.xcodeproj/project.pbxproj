@@ -7,9 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AF10DA242CB2F70038BF65 /* WeiBoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10AF242CB2F70038BF65 /* WeiBoCell.swift */; };
+		02AF10DB242CB2F70038BF65 /* WeiBoFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10B0242CB2F70038BF65 /* WeiBoFeedViewController.swift */; };
+		02AF10DC242CB2F80038BF65 /* WeiBoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10B1242CB2F70038BF65 /* WeiBoNode.swift */; };
+		02AF10DD242CB2F80038BF65 /* weibo_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10B4242CB2F70038BF65 /* weibo_3.json */; };
+		02AF10DE242CB2F80038BF65 /* weibo_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10B5242CB2F70038BF65 /* weibo_2.json */; };
+		02AF10DF242CB2F80038BF65 /* weibo_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10B6242CB2F70038BF65 /* weibo_5.json */; };
+		02AF10E0242CB2F80038BF65 /* weibo_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10B7242CB2F70038BF65 /* weibo_4.json */; };
+		02AF10E1242CB2F80038BF65 /* weibo_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10B8242CB2F70038BF65 /* weibo_7.json */; };
+		02AF10E2242CB2F80038BF65 /* weibo_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10B9242CB2F70038BF65 /* weibo_6.json */; };
+		02AF10E3242CB2F80038BF65 /* weibo_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10BA242CB2F70038BF65 /* weibo_1.json */; };
+		02AF10E4242CB2F80038BF65 /* weibo_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10BB242CB2F70038BF65 /* weibo_0.json */; };
+		02AF10E5242CB2F80038BF65 /* ResourceWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10BC242CB2F70038BF65 /* ResourceWeibo.bundle */; };
+		02AF10E6242CB2F80038BF65 /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02AF10BD242CB2F70038BF65 /* EmoticonWeibo.bundle */; };
+		02AF10E7242CB2F80038BF65 /* WBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10C0242CB2F70038BF65 /* WBModel.m */; };
+		02AF10E8242CB2F80038BF65 /* WBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10C1242CB2F70038BF65 /* WBModel.swift */; };
+		02AF10E9242CB2F80038BF65 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10C5242CB2F70038BF65 /* NSBundle+YYAdd.m */; };
+		02AF10EA242CB2F80038BF65 /* WBStatusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10C7242CB2F70038BF65 /* WBStatusHelper.m */; };
+		02AF10EB242CB2F80038BF65 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10C8242CB2F70038BF65 /* UIColorExtension.swift */; };
+		02AF10EC242CB2F80038BF65 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10CB242CB2F70038BF65 /* NSObject+YYModel.m */; };
+		02AF10ED242CB2F80038BF65 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10CC242CB2F70038BF65 /* YYClassInfo.m */; };
+		02AF10EE242CB2F80038BF65 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AF10D0242CB2F70038BF65 /* WebP.framework */; };
+		02AF10EF242CB2F80038BF65 /* WebPSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10D2242CB2F70038BF65 /* WebPSerializer.swift */; };
+		02AF10F0242CB2F80038BF65 /* CGImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10D3242CB2F70038BF65 /* CGImage+WebP.m */; };
+		02AF10F1242CB2F80038BF65 /* WebPProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10D4242CB2F70038BF65 /* WebPProcessor.swift */; };
+		02AF10F2242CB2F80038BF65 /* Image+WebP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10D5242CB2F70038BF65 /* Image+WebP.swift */; };
+		02AF10F3242CB2F80038BF65 /* KingfishedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10D8242CB2F70038BF65 /* KingfishedNode.swift */; };
+		02AF10F4242CB2F80038BF65 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AF10D9242CB2F70038BF65 /* Helper.swift */; };
 		3D4C86BB7F570177D72CE04D /* Pods_PandaKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316A577020E35A4E9F3DF965 /* Pods_PandaKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -28,15 +54,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02AF10A9242CB2B40038BF65 /* PandaKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PandaKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		02AF10AF242CB2F70038BF65 /* WeiBoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoCell.swift; sourceTree = "<group>"; };
+		02AF10B0242CB2F70038BF65 /* WeiBoFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoFeedViewController.swift; sourceTree = "<group>"; };
+		02AF10B1242CB2F70038BF65 /* WeiBoNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoNode.swift; sourceTree = "<group>"; };
+		02AF10B4242CB2F70038BF65 /* weibo_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_3.json; sourceTree = "<group>"; };
+		02AF10B5242CB2F70038BF65 /* weibo_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_2.json; sourceTree = "<group>"; };
+		02AF10B6242CB2F70038BF65 /* weibo_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_5.json; sourceTree = "<group>"; };
+		02AF10B7242CB2F70038BF65 /* weibo_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_4.json; sourceTree = "<group>"; };
+		02AF10B8242CB2F70038BF65 /* weibo_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_7.json; sourceTree = "<group>"; };
+		02AF10B9242CB2F70038BF65 /* weibo_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_6.json; sourceTree = "<group>"; };
+		02AF10BA242CB2F70038BF65 /* weibo_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_1.json; sourceTree = "<group>"; };
+		02AF10BB242CB2F70038BF65 /* weibo_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_0.json; sourceTree = "<group>"; };
+		02AF10BC242CB2F70038BF65 /* ResourceWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceWeibo.bundle; sourceTree = "<group>"; };
+		02AF10BD242CB2F70038BF65 /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
+		02AF10BF242CB2F70038BF65 /* WBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBModel.h; sourceTree = "<group>"; };
+		02AF10C0242CB2F70038BF65 /* WBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBModel.m; sourceTree = "<group>"; };
+		02AF10C1242CB2F70038BF65 /* WBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBModel.swift; sourceTree = "<group>"; };
+		02AF10C4242CB2F70038BF65 /* WBStatusHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusHelper.h; sourceTree = "<group>"; };
+		02AF10C5242CB2F70038BF65 /* NSBundle+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YYAdd.m"; sourceTree = "<group>"; };
+		02AF10C6242CB2F70038BF65 /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYAdd.h"; sourceTree = "<group>"; };
+		02AF10C7242CB2F70038BF65 /* WBStatusHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusHelper.m; sourceTree = "<group>"; };
+		02AF10C8242CB2F70038BF65 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		02AF10CA242CB2F70038BF65 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		02AF10CB242CB2F70038BF65 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		02AF10CC242CB2F70038BF65 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		02AF10CD242CB2F70038BF65 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		02AF10D0242CB2F70038BF65 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		02AF10D1242CB2F70038BF65 /* KingfisherWebP-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KingfisherWebP-umbrella.h"; sourceTree = "<group>"; };
+		02AF10D2242CB2F70038BF65 /* WebPSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPSerializer.swift; sourceTree = "<group>"; };
+		02AF10D3242CB2F70038BF65 /* CGImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImage+WebP.m"; sourceTree = "<group>"; };
+		02AF10D4242CB2F70038BF65 /* WebPProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPProcessor.swift; sourceTree = "<group>"; };
+		02AF10D5242CB2F70038BF65 /* Image+WebP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+WebP.swift"; sourceTree = "<group>"; };
+		02AF10D6242CB2F70038BF65 /* CGImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+WebP.h"; sourceTree = "<group>"; };
+		02AF10D7242CB2F70038BF65 /* KingfisherWebP.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = KingfisherWebP.modulemap; sourceTree = "<group>"; };
+		02AF10D8242CB2F70038BF65 /* KingfishedNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfishedNode.swift; sourceTree = "<group>"; };
+		02AF10D9242CB2F70038BF65 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		18B73AF81ACC99C77AD53C98 /* Pods-PandaKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKit_Example.release.xcconfig"; path = "Target Support Files/Pods-PandaKit_Example/Pods-PandaKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1C4F3AD7E17BABBC90A0419F /* PandaKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PandaKit.podspec; path = ../PandaKit.podspec; sourceTree = "<group>"; };
+		1C4F3AD7E17BABBC90A0419F /* PandaKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PandaKit.podspec; path = ../PandaKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		316A577020E35A4E9F3DF965 /* Pods_PandaKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		398386C9F4C272645B64AADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		398386C9F4C272645B64AADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		48E693B6D65C84544D02FA11 /* Pods_PandaKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* PandaKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -45,7 +106,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7BE847D3107CE63E846FBFD3 /* Pods-PandaKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PandaKit_Tests/Pods-PandaKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B09EFE215196C6BFDCC2508D /* Pods-PandaKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-PandaKit_Tests/Pods-PandaKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BFA533DEDEEC5AB580B72316 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BFA533DEDEEC5AB580B72316 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E65EC3F50641B09520EC956F /* Pods-PandaKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-PandaKit_Example/Pods-PandaKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AF10EE242CB2F80038BF65 /* WebP.framework in Frameworks */,
 				8C91AA14E6E7E5211A95BFB8 /* Pods_PandaKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +131,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02AF10A7242CB2690038BF65 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				02AF10A9242CB2B40038BF65 /* PandaKit_Example-Bridging-Header.h */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		02AF10A8242CB2700038BF65 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		02AF10AD242CB2E70038BF65 /* Deno */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10AE242CB2F70038BF65 /* WeiBo */,
+				02AF10C2242CB2F70038BF65 /* vender */,
+				02AF10D9242CB2F70038BF65 /* Helper.swift */,
+				02AF10D8242CB2F70038BF65 /* KingfishedNode.swift */,
+			);
+			name = Deno;
+			sourceTree = "<group>";
+		};
+		02AF10AE242CB2F70038BF65 /* WeiBo */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10BE242CB2F70038BF65 /* objc */,
+				02AF10B2242CB2F70038BF65 /* Resource */,
+				02AF10C1242CB2F70038BF65 /* WBModel.swift */,
+				02AF10AF242CB2F70038BF65 /* WeiBoCell.swift */,
+				02AF10B0242CB2F70038BF65 /* WeiBoFeedViewController.swift */,
+				02AF10B1242CB2F70038BF65 /* WeiBoNode.swift */,
+			);
+			path = WeiBo;
+			sourceTree = "<group>";
+		};
+		02AF10B2242CB2F70038BF65 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10B3242CB2F70038BF65 /* API Dump */,
+				02AF10BC242CB2F70038BF65 /* ResourceWeibo.bundle */,
+				02AF10BD242CB2F70038BF65 /* EmoticonWeibo.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		02AF10B3242CB2F70038BF65 /* API Dump */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10B4242CB2F70038BF65 /* weibo_3.json */,
+				02AF10B5242CB2F70038BF65 /* weibo_2.json */,
+				02AF10B6242CB2F70038BF65 /* weibo_5.json */,
+				02AF10B7242CB2F70038BF65 /* weibo_4.json */,
+				02AF10B8242CB2F70038BF65 /* weibo_7.json */,
+				02AF10B9242CB2F70038BF65 /* weibo_6.json */,
+				02AF10BA242CB2F70038BF65 /* weibo_1.json */,
+				02AF10BB242CB2F70038BF65 /* weibo_0.json */,
+			);
+			path = "API Dump";
+			sourceTree = "<group>";
+		};
+		02AF10BE242CB2F70038BF65 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10BF242CB2F70038BF65 /* WBModel.h */,
+				02AF10C0242CB2F70038BF65 /* WBModel.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		02AF10C2242CB2F70038BF65 /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10CE242CB2F70038BF65 /* KingfisherWebP */,
+				02AF10C9242CB2F70038BF65 /* Model */,
+				02AF10C3242CB2F70038BF65 /* Tools */,
+				02AF10C8242CB2F70038BF65 /* UIColorExtension.swift */,
+			);
+			path = vender;
+			sourceTree = "<group>";
+		};
+		02AF10C3242CB2F70038BF65 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10C6242CB2F70038BF65 /* NSBundle+YYAdd.h */,
+				02AF10C5242CB2F70038BF65 /* NSBundle+YYAdd.m */,
+				02AF10C4242CB2F70038BF65 /* WBStatusHelper.h */,
+				02AF10C7242CB2F70038BF65 /* WBStatusHelper.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		02AF10C9242CB2F70038BF65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10CD242CB2F70038BF65 /* NSObject+YYModel.h */,
+				02AF10CB242CB2F70038BF65 /* NSObject+YYModel.m */,
+				02AF10CA242CB2F70038BF65 /* YYClassInfo.h */,
+				02AF10CC242CB2F70038BF65 /* YYClassInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02AF10CE242CB2F70038BF65 /* KingfisherWebP */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10CF242CB2F70038BF65 /* Classes */,
+				02AF10D7242CB2F70038BF65 /* KingfisherWebP.modulemap */,
+			);
+			path = KingfisherWebP;
+			sourceTree = "<group>";
+		};
+		02AF10CF242CB2F70038BF65 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				02AF10D6242CB2F70038BF65 /* CGImage+WebP.h */,
+				02AF10D3242CB2F70038BF65 /* CGImage+WebP.m */,
+				02AF10D5242CB2F70038BF65 /* Image+WebP.swift */,
+				02AF10D1242CB2F70038BF65 /* KingfisherWebP-umbrella.h */,
+				02AF10D0242CB2F70038BF65 /* WebP.framework */,
+				02AF10D4242CB2F70038BF65 /* WebPProcessor.swift */,
+				02AF10D2242CB2F70038BF65 /* WebPSerializer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,12 +289,9 @@
 		607FACD21AFB9204008FA782 /* Example for PandaKit */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				02AF10A7242CB2690038BF65 /* Global */,
+				02AF10AD242CB2E70038BF65 /* Deno */,
+				02AF10A8242CB2700038BF65 /* Resource */,
 			);
 			name = "Example for PandaKit";
 			path = PandaKit;
@@ -156,7 +349,6 @@
 				7BE847D3107CE63E846FBFD3 /* Pods-PandaKit_Tests.debug.xcconfig */,
 				B09EFE215196C6BFDCC2508D /* Pods-PandaKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,7 +406,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1140;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -228,6 +420,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,8 +440,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AF10E3242CB2F80038BF65 /* weibo_1.json in Resources */,
+				02AF10E4242CB2F80038BF65 /* weibo_0.json in Resources */,
+				02AF10E1242CB2F80038BF65 /* weibo_7.json in Resources */,
+				02AF10DE242CB2F80038BF65 /* weibo_2.json in Resources */,
+				02AF10DD242CB2F80038BF65 /* weibo_3.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				02AF10E5242CB2F80038BF65 /* ResourceWeibo.bundle in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				02AF10E6242CB2F80038BF65 /* EmoticonWeibo.bundle in Resources */,
+				02AF10E0242CB2F80038BF65 /* weibo_4.json in Resources */,
+				02AF10DF242CB2F80038BF65 /* weibo_5.json in Resources */,
+				02AF10E2242CB2F80038BF65 /* weibo_6.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,16 +473,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PandaKit_Tests/Pods-PandaKit_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,11 +515,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PandaKit_Example/Pods-PandaKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PandaKit/PandaKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PandaKit/Panda.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PandaKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Panda.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,8 +557,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				02AF10EA242CB2F80038BF65 /* WBStatusHelper.m in Sources */,
+				02AF10F3242CB2F80038BF65 /* KingfishedNode.swift in Sources */,
+				02AF10ED242CB2F80038BF65 /* YYClassInfo.m in Sources */,
+				02AF10EC242CB2F80038BF65 /* NSObject+YYModel.m in Sources */,
+				02AF10E9242CB2F80038BF65 /* NSBundle+YYAdd.m in Sources */,
+				02AF10DA242CB2F70038BF65 /* WeiBoCell.swift in Sources */,
+				02AF10F0242CB2F80038BF65 /* CGImage+WebP.m in Sources */,
+				02AF10F2242CB2F80038BF65 /* Image+WebP.swift in Sources */,
+				02AF10F4242CB2F80038BF65 /* Helper.swift in Sources */,
+				02AF10E7242CB2F80038BF65 /* WBModel.m in Sources */,
+				02AF10E8242CB2F80038BF65 /* WBModel.swift in Sources */,
+				02AF10EB242CB2F80038BF65 /* UIColorExtension.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				02AF10F1242CB2F80038BF65 /* WebPProcessor.swift in Sources */,
+				02AF10DC242CB2F80038BF65 /* WeiBoNode.swift in Sources */,
+				02AF10DB242CB2F70038BF65 /* WeiBoFeedViewController.swift in Sources */,
+				02AF10EF242CB2F80038BF65 /* WebPSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,11 +719,19 @@
 			baseConfigurationReference = E65EC3F50641B09520EC956F /* Pods-PandaKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PandaKit/vender/KingfisherWebP/Classes",
+				);
 				INFOPLIST_FILE = PandaKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PandaKit/PandaKit_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -518,11 +742,18 @@
 			baseConfigurationReference = 18B73AF81ACC99C77AD53C98 /* Pods-PandaKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PandaKit/vender/KingfisherWebP/Classes",
+				);
 				INFOPLIST_FILE = PandaKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PandaKit/PandaKit_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
