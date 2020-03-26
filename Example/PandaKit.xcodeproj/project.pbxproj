@@ -91,7 +91,7 @@
 		02AF10D8242CB2F70038BF65 /* KingfishedNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfishedNode.swift; sourceTree = "<group>"; };
 		02AF10D9242CB2F70038BF65 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		18B73AF81ACC99C77AD53C98 /* Pods-PandaKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaKit_Example.release.xcconfig"; path = "Target Support Files/Pods-PandaKit_Example/Pods-PandaKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1C4F3AD7E17BABBC90A0419F /* PandaKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PandaKit.podspec; path = ../PandaKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1C4F3AD7E17BABBC90A0419F /* PandaKit-flow.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "PandaKit-flow.podspec"; path = "../PandaKit-flow.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		316A577020E35A4E9F3DF965 /* Pods_PandaKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		398386C9F4C272645B64AADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		48E693B6D65C84544D02FA11 /* Pods_PandaKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -325,7 +325,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				1C4F3AD7E17BABBC90A0419F /* PandaKit.podspec */,
+				1C4F3AD7E17BABBC90A0419F /* PandaKit-flow.podspec */,
 				398386C9F4C272645B64AADE /* README.md */,
 				BFA533DEDEEC5AB580B72316 /* LICENSE */,
 			);
