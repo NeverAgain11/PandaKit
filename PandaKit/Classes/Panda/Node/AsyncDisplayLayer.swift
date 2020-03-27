@@ -62,20 +62,19 @@ public final class AsyncDisplayLayer: CALayer {
         
         if async {
             AsyncDisplayQueue.async {
-                if let image = self.contentAction?(isCanceled) {
-                    DispatchQueue.main.async {
-                        if isCanceled() { return }
-                        self.contents = image.cgImage
-                        self.didDisplayAction?(async)
-                    }
+                guard let image = self.contentAction?(isCanceled) else { return }
+                
+                DispatchQueue.main.async {
+                    if isCanceled() { return }
+                    self.contents = image.cgImage
+                    self.didDisplayAction?(async)
                 }
             }
         }
         else {
-            if let image = self.contentAction?(isCanceled) {
-                self.contents = image.cgImage
-                self.didDisplayAction?(async)
-            }
+            guard let image = self.contentAction?(isCanceled) else { return }
+            self.contents = image.cgImage
+            self.didDisplayAction?(async)
         }
         
     }

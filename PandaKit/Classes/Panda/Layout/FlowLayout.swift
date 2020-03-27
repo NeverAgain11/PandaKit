@@ -45,13 +45,12 @@ open class FlowLayoutNode: ViewNode {
     /// if false layout in the form   |view|space|view|
     public var withMargin = false
     
-    
     private var rowCount: Int {
-        get{ return Int((validNode.count - 1)/columnCount) + 1}
+        get { return Int((validNode.count - 1)/columnCount) + 1}
     }
     
-    private var validNode:[ViewNode] {
-        return subnodes.filter{ $0.hidden == false }
+    private var validNode: [ViewNode] {
+        return subnodes.filter { $0.hidden == false }
     }
     
     convenience init(nodes: [ViewNode]) {
@@ -60,7 +59,7 @@ open class FlowLayoutNode: ViewNode {
     }
     
     public func addArrangedNodes(_ nodes: [ViewNode]) {
-        nodes.forEach { addSubnode($0)}
+        nodes.forEach { addSubnode($0) }
     }
     
     open override func removeSubnode(_ node: ViewNode) {
@@ -85,9 +84,10 @@ open class FlowLayoutNode: ViewNode {
         if space < 0.01 {
             space = totalSpace/(columnCount + (withMargin ? 1 : -1))
         }
+        
         for (index, item) in validNode.enumerated() {
             let xIndex = index % columnCount
-            let yIndex = index/columnCount
+            let yIndex = index / columnCount
             
             let x = inset.left + xIndex*(width + space) + (withMargin ? space : 0)
             let y = inset.top + yIndex*(height + lineSpace)
@@ -119,7 +119,7 @@ open class FlowLayoutNode: ViewNode {
     }
     
     open override  var itemIntrinsicContentSize: CGSize {
-        guard validNode.count > 0,columnCount > 0 else { return .zero }
+        guard validNode.count > 0, columnCount > 0 else { return .zero }
         let size = itemSize(for: bounds.size)
         
         return contenSizeForItemSize(size)

@@ -9,7 +9,7 @@ import UIKit
 
 public typealias TextTapAction = (NSRange) -> ()
 
-open class TextNode: ControlNode,TextRenderable {
+open class TextNode: ControlNode, TextRenderable {
     
     public private(set) lazy var textHolder = TextAttributesHolder(self)
     
@@ -40,10 +40,8 @@ open class TextNode: ControlNode,TextRenderable {
     open override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?, currentTraitCollection: UITraitCollection) {
         super.traitCollectionDidChange(previousTraitCollection, currentTraitCollection: currentTraitCollection)
         
-        if #available(iOS 13.0, *) {
-            if currentTraitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
-                setNeedsDisplay()
-            }
-        }
+        guard #available(iOS 13.0, *), currentTraitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) else { return }
+        
+        setNeedsDisplay()
     }
 }

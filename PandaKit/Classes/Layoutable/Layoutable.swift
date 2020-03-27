@@ -44,13 +44,13 @@ extension Layoutable {
     }
     
     public var fixedWidth: Bool {
-        set{ layoutManager.fixedWidth = newValue }
-        get{ return layoutManager.fixedWidth }
+        set { layoutManager.fixedWidth = newValue }
+        get { return layoutManager.fixedWidth }
     }
     
     public var layoutNeedsUpdate: Bool {
-        set{ layoutManager.layoutNeedsUpdate = newValue}
-        get{ return layoutManager.layoutNeedsUpdate }
+        set { layoutManager.layoutNeedsUpdate = newValue}
+        get { return layoutManager.layoutNeedsUpdate }
     }
     
     /// disable cassowary Layout Enginer

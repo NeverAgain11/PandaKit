@@ -187,8 +187,8 @@ open class ViewNode: Layoutable {
     }
     
     public var layoutRect: CGRect {
-        set{ frame = newValue.pixelRounded }
-        get{ return frame }
+        set { frame = newValue.pixelRounded }
+        get { return frame }
     }
     
     open var itemIntrinsicContentSize: CGSize {

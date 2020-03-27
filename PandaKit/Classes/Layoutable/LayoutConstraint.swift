@@ -173,7 +173,7 @@ extension LayoutConstraint {
         self.solver = solver
         do {
             try solver.add(constraint: constraint)
-        }catch ConstraintError.requiredFailureWithExplanation(let constraint) {
+        } catch ConstraintError.requiredFailureWithExplanation(let constraint) {
             let tips = """
                  Unable to simultaneously satisfy constraints.
                  Probably at least one of the constraints in the following list is one you don't want.

@@ -55,4 +55,11 @@ open class ImageNode: ControlNode {
         return ImageRender.imageForKey(key, isCancelled: isCancel)
     }
     
+    open override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?, currentTraitCollection: UITraitCollection) {
+        super.traitCollectionDidChange(previousTraitCollection, currentTraitCollection: currentTraitCollection)
+        
+        guard #available(iOS 13.0, *), currentTraitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) else { return }
+        
+        setNeedsDisplay()
+    }
 }

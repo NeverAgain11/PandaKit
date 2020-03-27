@@ -9,44 +9,44 @@
 import Foundation
 
 public protocol TextRenderable: class {
-    var textHolder: TextAttributesHolder{ get }
+    var textHolder: TextAttributesHolder { get }
     func textDidUpdate(for attribute: AnyKeyPath)
 }
 
 extension TextRenderable {
     public var text: String {
-        set{ textHolder.text = newValue }
-        get{ return textHolder.text }
+        set { textHolder.text = newValue }
+        get { return textHolder.text }
     }
     
     public var attributeText: NSAttributedString? {
-        set{ textHolder.attributeText = newValue}
-        get{ return textHolder.attributeText }
+        set { textHolder.attributeText = newValue}
+        get { return textHolder.attributeText }
     }
     
     public var textColor: UIColor {
-        set{ textHolder.textColor = newValue }
-        get{ return textHolder.textColor }
+        set { textHolder.textColor = newValue }
+        get { return textHolder.textColor }
     }
     
     public var font: UIFont {
-        set{ textHolder.font = newValue}
-        get{ return textHolder.font }
+        set { textHolder.font = newValue}
+        get { return textHolder.font }
     }
     
     public var numberOfLines: Int {
-        set{ textHolder.numberOfLines = newValue }
-        get{ return textHolder.numberOfLines }
+        set { textHolder.numberOfLines = newValue }
+        get { return textHolder.numberOfLines }
     }
     
     public var truncationMode: NSLineBreakMode {
-        set{ textHolder.truncationMode = newValue }
-        get{ return textHolder.truncationMode }
+        set { textHolder.truncationMode = newValue }
+        get { return textHolder.truncationMode }
     }
     
     public var lineSpace: CGFloat? {
-        set{ textHolder.lineSpace = newValue }
-        get{ return textHolder.lineSpace}
+        set { textHolder.lineSpace = newValue }
+        get { return textHolder.lineSpace}
     }
 }
 

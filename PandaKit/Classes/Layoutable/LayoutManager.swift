@@ -144,7 +144,7 @@ final class ContentSizeConstraints {
     var yAxis = Axis()
     
     /// update content size Constraint
-    func updateSize(_ size: CGSize,node: Layoutable) {
+    func updateSize(_ size: CGSize, node: Layoutable) {
         
         if size.width != InvalidIntrinsicMetric {
             if let width = xAxis.hugging,
@@ -207,7 +207,7 @@ final class PositionConstraints {
     var minY: LayoutConstraint?
     
     /// update content size Constraint
-    func updateOrigin(_ point: CGPoint,node: Layoutable, priority: LayoutPriority = .required) {
+    func updateOrigin(_ point: CGPoint, node: Layoutable, priority: LayoutPriority = .required) {
         
         if let minX = minX {
             minX.constant = point.x

@@ -32,12 +32,9 @@ final class ImageRender {
         return nil;
     }
     
-    class func contentForKey(_ key: ImageKey, _ isCancelled: CancelBlock)->UIImage? {
+    class func contentForKey(_ key: ImageKey, _ isCancelled: CancelBlock) -> UIImage? {
         
-        if isCancelled(){ return nil }
-        
-        UIGraphicsBeginImageContextWithOptions(key.size, false, UIScreen.main.scale)
-        defer { UIGraphicsEndImageContext() }
+        if isCancelled() { return nil }
         
         var size: CGSize = .zero
         switch key.contentMode {
@@ -47,17 +44,32 @@ final class ImageRender {
         }
         let origin = size.inset(to: key.size)
         
-        if isCancelled(){ return nil }
+        if isCancelled() { return nil }
         
-        key.image.draw(in: CGRect(origin: origin, size: size))
-        
-        if isCancelled(){ return nil }
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        if let processor = key.processor,let image = image {
-            return processor.process(image: image)
+        if #available(iOS 10.0, *) {
+            let render = UIGraphicsImageRenderer(size: key.size)
+            let image = render.image { (context) in
+                key.image.draw(in: CGRect(origin: origin, size: size))
+            }
+            if isCancelled() { return nil }
+            if let processor = key.processor {
+                return processor.process(image: image)
+            }
+            return image
+        } else {
+            UIGraphicsBeginImageContextWithOptions(key.size, false, UIScreen.main.scale)
+            defer { UIGraphicsEndImageContext() }
+            
+            key.image.draw(in: CGRect(origin: origin, size: size))
+            
+            if isCancelled() { return nil }
+            
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            if let processor = key.processor, let image = image {
+                return processor.process(image: image)
+            }
+            return image
         }
-        return image
     }
     
 }

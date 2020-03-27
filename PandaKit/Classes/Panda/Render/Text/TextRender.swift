@@ -52,7 +52,7 @@ final public class TextRender {
             return render
         }
         
-        let render =  TextRender(textAttributes: attributes, constraintSize: constrainedSize)
+        let render = TextRender(textAttributes: attributes, constraintSize: constrainedSize)
         
         activeCache.setObject(render, forKey: key)
         

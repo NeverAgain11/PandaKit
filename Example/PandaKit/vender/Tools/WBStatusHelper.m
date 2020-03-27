@@ -526,9 +526,9 @@ static inline CGRect YYEmojiGetGlyphBoundingRectWithFontSize(CGFloat fontSize) {
     UIImage *image = [WBStatusHelper imageWithPath:imagePath];
     if (!image) continue;
 
-    NSAttributedString *emoText = [NSAttributedString attachmentStringWithEmojiImage:image fontSize:fontSize];
-    [text replaceCharactersInRange:range withAttributedString:emoText];
-    emoClipLength += range.length - 1;
+//    NSAttributedString *emoText = [NSAttributedString attachmentStringWithEmojiImage:image fontSize:fontSize];
+//    [text replaceCharactersInRange:range withAttributedString:emoText];
+//    emoClipLength += range.length - 1;
   }
   NSMutableParagraphStyle * style = [[NSMutableParagraphStyle alloc] init];
   style.lineSpacing = 3;

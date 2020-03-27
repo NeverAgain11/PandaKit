@@ -172,7 +172,6 @@ open class ControlNode: ViewNode {
     
 }
 
-
 extension UIControl.Event: Hashable {
     public var hashValue: Int {
         return Int(rawValue)

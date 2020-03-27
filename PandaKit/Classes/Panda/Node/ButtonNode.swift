@@ -265,7 +265,7 @@ struct StatePicker<T> {
         if state == .normal {
             stateTable[.normal] = value
         } else {
-            let states: [UIControl.State] = [.highlighted,.selected,.disabled]
+            let states: [UIControl.State] = [.highlighted, .selected, .disabled]
             
             // flatten state and value
             states.forEach {
