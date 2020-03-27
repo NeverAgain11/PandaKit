@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         KingfisherManager.shared.cache.maxMemoryCost = 100 * 1024 * 1024
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: WeiBoFeedViewController())
+        window?.rootViewController = UINavigationController(rootViewController: UIViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: WeiBoFeedViewController())
         window?.makeKeyAndVisible()
         
         return true

@@ -5,31 +5,6 @@
 //  Created by nangezao on 2017/10/22.
 //  Copyright © 2017年 nange. All rights reserved.
 //
-/// Permission is hereby granted, free of charge, to any person obtaining a copy
-/// of this software and associated documentation files (the "Software"), to deal
-/// in the Software without restriction, including without limitation the rights
-/// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-/// copies of the Software, and to permit persons to whom the Software is
-/// furnished to do so, subject to the following conditions:
-///
-/// The above copyright notice and this permission notice shall be included in
-/// all copies or substantial portions of the Software.
-///
-/// Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
-/// distribute, sublicense, create a derivative work, and/or sell copies of the
-/// Software in any work that is designed, intended, or marketed for pedagogical or
-/// instructional purposes related to programming, coding, application development,
-/// or information technology.  Permission for such use, copying, modification,
-/// merger, publication, distribution, sublicensing, creation of derivative works,
-/// or sale is expressly withheld.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-/// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-/// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-/// THE SOFTWARE.
 
 public enum ConstraintError: Error {
     case requiredFailure
@@ -55,7 +30,7 @@ private struct ConstraintInfo {
 final public class SimplexSolver {
     
     // whether call solve() when add or remove constraint
-    // if false ,remeber to call solve() to get right result
+    // if false, remeber to call solve() to get right result
     public var autoSolve = false
     
     public var explainFailure = true
@@ -73,10 +48,10 @@ final public class SimplexSolver {
     
     private var constraintMarkered = [Variable: Constraint]()
     
-    // mapper for constraint and marker ,errors variable
+    // mapper for constraint and marker, errors variable
     private var constraintInfos = [Constraint: ConstraintInfo]()
     
-    // objective function,out goal is to minimize this function
+    // objective function, out goal is to minimize this function
     private var objective = Expression()
     
     public init() {}
@@ -294,7 +269,6 @@ final public class SimplexSolver {
         
     }
     
-    
     /// exchange basic var and parametic var
     /// example: row like rows[x] = 2*y + z which means x = 2*y + z, pivot(entry: z, exit: x)
     /// result: rows[y] = 1/2*x - 1/2*z which is y = 1/2*x - 1/2*z
@@ -308,7 +282,6 @@ final public class SimplexSolver {
         addRow(header: entry, expr: expr)
     }
     
-    
     /// try to add expr to tableu
     /// - Parameter expr: expression to add
     /// - Returns: if we can't find a variable in expr to become basic, return false; else return true
@@ -321,7 +294,6 @@ final public class SimplexSolver {
         addRow(header: subject, expr: expr)
         return true
     }
-    
     
     /// choose a subject to become basic var from expr
     /// if expr constains external variable, return external variable
@@ -349,7 +321,6 @@ final public class SimplexSolver {
         }
         return subject
     }
-    
     
     private func addArtificalVariable(to expr: Expression) throws -> (Bool,[Constraint]) {
         let av = Variable.slack()
@@ -403,7 +374,6 @@ final public class SimplexSolver {
         
         return explanation
     }
-    
     
     /// make a new linear expression to represent constraint
     /// this will replace all basic var in constraint.expr with related expression
@@ -545,7 +515,7 @@ final public class SimplexSolver {
     private func add(expr: Expression, variable: Variable, delta: Double) {
         if isBasicVar(variable) {
             let row = rowExpression(for: variable)
-            expr.add(expr: row ,multiply: delta)
+            expr.add(expr: row, multiply: delta)
         } else {
             expr.add(variable, multiply: delta)
         }
@@ -563,7 +533,7 @@ final public class SimplexSolver {
         assert(rows.keys.contains(marker))
         infeasibleRows.remove(marker)
         let expr = rows.removeValue(forKey: marker)!
-        for (key , _) in expr.terms {
+        for (key, _) in expr.terms {
             removeValue(marker, from: key)
         }
         return expr

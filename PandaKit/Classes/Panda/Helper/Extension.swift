@@ -7,7 +7,6 @@
 //
 
 import Foundation
-//import Layoutable
 
 extension CGSize {
     /// scale self and keep aspectRatio to fite size
@@ -32,7 +31,7 @@ extension CGSize {
     }
     
     public func inset(to size: CGSize) -> CGPoint {
-        return CGPoint(x: (size.width - width)/2 ,
+        return CGPoint(x: (size.width - width)/2,
                        y: (size.height - height)/2)
     }
     
@@ -92,7 +91,7 @@ extension CGRect {
         return (lhsRect.pixelRounded, rhsRect.pixelRounded)
     }
     
-    /// layout two item with size ths and bhs vertical , equal centerY
+    /// layout two item with size ths and bhs vertical, equal centerY
     ///
     /// - Parameters:
     ///   - ths: item in top

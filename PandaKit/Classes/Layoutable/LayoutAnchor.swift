@@ -4,39 +4,12 @@
 //  Created by nangezao on 2017/7/19.
 //  Copyright © 2017年 nange. All rights reserved.
 //
-/// Permission is hereby granted, free of charge, to any person obtaining a copy
-/// of this software and associated documentation files (the "Software"), to deal
-/// in the Software without restriction, including without limitation the rights
-/// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-/// copies of the Software, and to permit persons to whom the Software is
-/// furnished to do so, subject to the following conditions:
-///
-/// The above copyright notice and this permission notice shall be included in
-/// all copies or substantial portions of the Software.
-///
-/// Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
-/// distribute, sublicense, create a derivative work, and/or sell copies of the
-/// Software in any work that is designed, intended, or marketed for pedagogical or
-/// instructional purposes related to programming, coding, application development,
-/// or information technology.  Permission for such use, copying, modification,
-/// merger, publication, distribution, sublicensing, creation of derivative works,
-/// or sale is expressly withheld.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-/// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-/// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-/// THE SOFTWARE.
-
-//import Cassowary
 
 public protocol AnchorType: class,CustomDebugStringConvertible {
     
-    var item: Layoutable!{ get set}
+    var item: Layoutable! { get set}
     
-    var attribute: LayoutAttribute{ get }
+    var attribute: LayoutAttribute { get }
 }
 
 extension AnchorType {
@@ -79,7 +52,7 @@ extension AnchorType {
     
     @discardableResult
     public func constraint(to anchor: Self? = nil,relation: LayoutRelation, constant: Value = 0) -> LayoutConstraint {
-        return LayoutConstraint(firstAnchor: self , secondAnchor: anchor, relation: relation, constant:constant)
+        return LayoutConstraint(firstAnchor: self, secondAnchor: anchor, relation: relation, constant:constant)
     }
     
     // These methods return a constraint of the form thisAnchor = otherAnchor + constant.
@@ -147,12 +120,12 @@ public class Anchor: AnchorType {
 }
 
 /// Axis-specific subclasses for location anchors: top/bottom, left/right, etc.
-final public class XAxisAnchor : Anchor {}
+final public class XAxisAnchor: Anchor {}
 
-final public  class YAxisAnchor : Anchor {}
+final public  class YAxisAnchor: Anchor {}
 
 /// This layout anchor subclass is used for sizes (width & height).
-final public class DimensionAnchor : Anchor {
+final public class DimensionAnchor: Anchor {
     
     ///  These methods return a constraint of the form
     ///  thisAnchor = otherAnchor * multiplier + constant.
@@ -162,13 +135,13 @@ final public class DimensionAnchor : Anchor {
     }
     
     @discardableResult
-    final public func greaterThanOrEqualTo(_ anchor: DimensionAnchor? = nil, multiplier m: Value = 1, constant: Value = 0 ) -> LayoutConstraint {
-        return LayoutConstraint(firstAnchor:self, secondAnchor: anchor, relation:.greatThanOrEqual ,multiplier:m, constant:constant )
+    final public func greaterThanOrEqualTo(_ anchor: DimensionAnchor? = nil, multiplier m: Value = 1, constant: Value = 0) -> LayoutConstraint {
+        return LayoutConstraint(firstAnchor:self, secondAnchor: anchor, relation:.greatThanOrEqual, multiplier:m, constant:constant)
     }
     
     @discardableResult
     final public func lessThanOrEqualTo(_ anchor: DimensionAnchor? = nil, multiplier m: Value = 1, constant: Value = 0) -> LayoutConstraint {
-        return LayoutConstraint(firstAnchor:self, secondAnchor: anchor,relation:.lessThanOrEqual ,multiplier:m, constant:constant )
+        return LayoutConstraint(firstAnchor:self, secondAnchor: anchor,relation:.lessThanOrEqual, multiplier:m, constant:constant)
     }
 }
 
